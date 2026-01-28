@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Projects | Annette Ballet</title>
+  
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 dark:text-gray-100 transition">
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow fixed w-full z-50">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold text-indigo-600 dark:text-indigo-400">Annette</a>
+      <a href="index.html" class="text-sm text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400">
+        ← Back to Portfolio
+      </a>
+    </nav>
+  </header>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="pt-24 pb-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-10 text-center dark:text-white">My Projects</h3>
+      
+      <!-- Projects Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Project 1 -->
+        <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="html">
+          <div class="relative h-48 placeholder-pattern">
+            <img src="images/hobbies-pic.png" class="w-full h-full object-cover" alt="Recipe Blog">
+          </div>
+          <div class="p-5">
+            <h4 class="text-xl font-bold mb-2 dark:text-white">Recipe Blog</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Responsive recipe blog built with HTML & Tailwind.</p>
+            <div class="flex gap-4">
+              <a href="https://anballem.github.io/hobbies.html/" class="text-amber-600 font-semibold hover:underline">Live Demo</a>
+              <a href="https://github.com/Anballem/hobbies.html" class="text-gray-600 dark:text-gray-400 hover:underline">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="js">
+          <div class="relative h-48 placeholder-pattern">
+            <img src="images/FKQ-pic.png" class="w-full h-full object-cover" alt="Quiz App">
+          </div>
+          <div class="p-5">
+            <h4 class="text-xl font-bold mb-2 dark:text-white">Quiz App</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Interactive quiz app built with JavaScript.</p>
+            <div class="flex gap-4">
+              <a href="https://anballem.github.io/Fantansy-Kingdom-Quiz/" class="text-amber-600 font-semibold hover:underline">Live Demo</a>
+              <a href="https://github.com/Anballem/Fantansy-Kingdom-Quiz" class="text-gray-600 dark:text-gray-400 hover:underline">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="js">
+          <div class="relative h-48 placeholder-pattern">
+            <img src="images/AC-pic.png" class="w-full h-full object-cover" alt="Age Calculator">
+          </div>
+          <div class="p-5">
+            <h4 class="text-xl font-bold mb-2 dark:text-white">Age Calculator</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Simple age calculator using JavaScript logic.</p>
+            <div class="flex gap-4">
+              <a href="https://anballem.github.io/age-calculator/" class="text-amber-600 font-semibold hover:underline">Live Demo</a>
+              <a href="https://github.com/Anballem/age-calculator" class="text-gray-600 dark:text-gray-400 hover:underline">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="html">
+          <div class="relative h-48 placeholder-pattern">
+            <img src="images/CCT-pic.png" class="w-full h-full object-cover" alt="Caesar Cipher App">
+          </div>
+          <div class="p-5">
+            <h4 class="text-xl font-bold mb-2 dark:text-white">Caesar Cipher App</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">A simple web app that implements the Caesar cipher encryption technique.</p>
+            <div class="flex gap-4">
+              <a href="https://anballem.github.io/caesar-cipher-app/" class="text-amber-600 font-semibold hover:underline">Live Demo</a>
+              <a href="https://github.com/Anballem/caesar-cipher-app" class="text-gray-600 dark:text-gray-400 hover:underline">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="js">
+          <div class="relative h-48 placeholder-pattern">
+            <img src="images/TLT-pic.png" class="w-full h-full object-cover" alt="Text Adventure Game">
+          </div>
+          <div class="p-5">
+            <h4 class="text-xl font-bold mb-2 dark:text-white">OOP Text Adventure Game</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">A text-based adventure game built with JavaScript.</p>
+            <div class="flex gap-4">
+              <a href="https://anballem.github.io/text-adventure-game/" class="text-amber-600 font-semibold hover:underline">Live Demo</a>
+              <a href="https://github.com/Anballem/text-adventure-game" class="text-gray-600 dark:text-gray-400 hover:underline">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="html">
+          <div class="relative h-48 placeholder-pattern">
+            <img src="images/PP.png" class="w-full h-full object-cover" alt="Portfolio Website">
+          </div>
+          <div class="p-5">
+            <h4 class="text-xl font-bold mb-2 dark:text-white">Portfolio Website</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Personal portfolio website showcasing my work.</p>
+            <div class="flex gap-4">
+              <a href="https://anballem.github.io/frontend-portfolio/" class="text-amber-600 font-semibold hover:underline">Live Demo</a>
+              <a href="https://github.com/Anballem/frontend-portfolio" class="text-gray-600 dark:text-gray-400 hover:underline">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End of Projects Grid -->
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="text-center py-6 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-400">
+    <p>© 2026 Annette Ballet. Built with HTML, Tailwind & JavaScript.</p>
+  </footer>
+
+</body>
+</html>
