@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title> Annette Ballet | Frontend Developer</title>
 
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -13,37 +15,7 @@
     }
   </script>
 
-  <!-- Custom CSS for animations -->
-  <style>
-    /* Progress bar animation */
-    @keyframes progress {
-		from {
-			width: 0;
-		}
-	}
 
-	.animate-progress {
-		display: block;
-		animation: progress 1500ms ease-in 1;
-	}
-    
-    /* Placeholder pattern for project images */
-    .placeholder-gradient {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    }
-    
-    .placeholder-pattern {
-      background-color: #f3f4f6;
-      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    }
-    
-    .dark .placeholder-pattern {
-      background-color: #1f2937;
-      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    }
-  </style>
-
-  <!-- Custom JS -->
   <script defer src="main.js"></script>
 </head>
 
@@ -84,15 +56,15 @@
         <span class="text-indigo-600 dark:text-indigo-400">Annette</span>
       </h2>
       <p class="text-lg mb-6 text-gray-700 dark:text-gray-300">
-        Crafting beautiful digital experiences with clean code and creative design
+        Frontend Developer building responsive and user-friendly, Crafting beautiful digital experiences with clean code and creative websites with HTML, Tailwind CSS, and JavaScript.
       </p>
 
       <div class="space-x-4">
         <a href="#projects" class="bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 transition">
-          Explore My Work
+          Explore My Work &#128188;
         </a>
-        <a href="#contact" class="border border-indigo-600 text-indigo-600 dark:text-indigo-400 px-8 py-3 rounded-full font-semibold hover:bg-indigo-600 hover:text-white transition">
-          Get in Touch
+        <a href="#contact" class="border border-indigo-600 text-indigo-600 dark:text-indigo-400 px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 hover:text-white transition">
+          Get in Touch &#x1F4E8;
         </a>
       </div>
     </div>
@@ -125,7 +97,7 @@
         <!-- Quick Stats -->
         <div class="flex gap-6 mt-6">
           <div class="text-center">
-            <span class="block text-2xl font-bold text-indigo-600 dark:text-indigo-400">4+</span>
+            <span class="block text-2xl font-bold text-indigo-600 dark:text-indigo-400">8+</span>
             <span class="text-sm text-gray-600 dark:text-gray-400">Projects</span>
           </div>
           <div class="text-center">
@@ -156,6 +128,10 @@
           class="filter-btn border border-indigo-600 text-indigo-600 dark:text-indigo-400 px-5 py-2 rounded-full font-semibold hover:bg-indigo-600 hover:text-white transition">
           JavaScript
         </button>
+        <button data-filter="backend"
+          class="filter-btn border border-indigo-600 text-indigo-600 dark:text-indigo-400 px-5 py-2 rounded-full font-semibold hover:bg-indigo-600 hover:text-white transition">
+          Backend
+        </button>
       </div>
 
       <!-- Projects Grid -->
@@ -163,10 +139,10 @@
         
         <!-- Project 1 -->
         <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="html">
-          <div class="relative h-48 placeholder-pattern">
-            <img src="images/project1.png" class="w-full h-full object-cover" alt="Recipe Blog">
+          <div class="relative h-48 bg-gray-100 dark:bg-gray-800 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.1%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] dark:bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.05%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')]">
+            <img src="images/hobbies-pic.png" class="w-full h-full object-cover" alt="Recipe Blog">
             <div class="absolute inset-0 bg-indigo-600/80 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <a href="https://anballem.github.io/hobbies.html/" class="text-white font-semibold hover:underline">View Project</a>
+              <a href="blog.html" class="text-white font-semibold hover:underline">View Project</a>
             </div>
           </div>
           <div class="p-5">
@@ -177,10 +153,10 @@
 
         <!-- Project 2 -->
         <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="js">
-          <div class="relative h-48 placeholder-pattern">
-            <img src="images/project2.png" class="w-full h-full object-cover" alt="Quiz App">
+          <div class="relative h-48 bg-gray-100 dark:bg-gray-800 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.1%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] dark:bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.05%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')]">
+            <img src="images/FKQ-pic.png" class="w-full h-full object-cover" alt="Quiz App">
             <div class="absolute inset-0 bg-indigo-600/80 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <a href="https://anballem.github.io/Fantansy-Kingdom-Quiz/" class="text-white font-semibold hover:underline">View Project</a>
+               <a href="blog.html" class="text-white font-semibold hover:underline">View Project</a>
             </div>
           </div>
           <div class="p-5">
@@ -191,10 +167,10 @@
 
         <!-- Project 3 -->
         <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="js">
-          <div class="relative h-48 placeholder-pattern">
-            <img src="images/project3.png" class="w-full h-full object-cover" alt="Age Calculator">
+          <div class="relative h-48 bg-gray-100 dark:bg-gray-800 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.1%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] dark:bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.05%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')]">
+            <img src="images/AC-pic.png" class="w-full h-full object-cover" alt="Age Calculator">
             <div class="absolute inset-0 bg-indigo-600/80 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <a href="https://anballem.github.io/age-calculator/" class="text-white font-semibold hover:underline">View Project</a>
+               <a href="blog.html" class="text-white font-semibold hover:underline">View Project</a>
             </div>
           </div>
           <div class="p-5">
@@ -205,10 +181,10 @@
 
         <!-- Project 4 -->
         <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="js">
-          <div class="relative h-48 placeholder-pattern">
-            <img src="images/picture4.jpg" class="w-full h-full object-cover" alt="Text Adventure Game">
+          <div class="relative h-48 bg-gray-100 dark:bg-gray-800 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.1%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] dark:bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.05%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')]">
+            <img src="images/TLT-pic.png" class="w-full h-full object-cover" alt="Text Adventure Game">
             <div class="absolute inset-0 bg-indigo-600/80 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <a href="https://anballem.github.io/text-adventure-game/" class="text-white font-semibold hover:underline">View Project</a>
+               <a href="blog.html" class="text-white font-semibold hover:underline">View Project</a>
             </div>
           </div>
           <div class="p-5">
@@ -217,22 +193,88 @@
           </div>
         </div>
 
+        <!-- Project 5 -->
+        <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="js">
+          <div class="relative h-48 bg-gray-100 dark:bg-gray-800 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.1%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] dark:bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.05%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')]">
+            <img src="images/Weather-A.png" class="w-full h-full object-cover" alt="Weather App">
+            <div class="absolute inset-0 bg-indigo-600/80 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <a href="blog.html" class="text-white font-semibold hover:underline">View Project</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-xl font-bold mb-2 dark:text-white">Weather App</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">A Weather App using Next.JS.</p>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="backend">
+          <div class="relative h-48 bg-gray-100 dark:bg-gray-800 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.1%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] dark:bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.05%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')]">
+            <div class="w-full h-full flex items-center justify-center bg-indigo-50 dark:bg-gray-700">
+              <img src="images/API.png" class="w-full h-full object-cover" alt="Event App">
+            </div>
+            <div class="absolute inset-0 bg-indigo-600/80 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <a href="blog.html" class="text-white font-semibold hover:underline">View Project</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-xl font-bold mb-2 dark:text-white">RESTful Blog API</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Robust API built with Express and MongoDB, featuring MVC architecture and regex search.</p>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="backend">
+          <div class="relative h-48 bg-gray-100 dark:bg-gray-800 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.1%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] dark:bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.05%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')]">
+            <img src="images/FFS.png" class="w-full h-full object-cover" alt="Full Stack App">
+            <div class="absolute inset-0 bg-indigo-600/80 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <a href="blog.html" class="text-white font-semibold hover:underline">View Project</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-xl font-bold mb-2 dark:text-white">Full Stack Event App</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">A full-stack event management application with frontend and backend integration.</p>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="js">
+          <div class="relative h-48 bg-gray-100 dark:bg-gray-800 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.1%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] dark:bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.05%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')]">
+            <img src="images/SS.png" class="w-full h-full object-cover" alt="Social Site">
+            <div class="absolute inset-0 bg-indigo-600/80 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <a href="blog.html" class="text-white font-semibold hover:underline">View Project</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-xl font-bold mb-2 dark:text-white">Social Site</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">A social media application built with Next.js.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
+
+
+
   <!-- ===== SKILLS SECTION ===== -->
-  <section id="skills" class="max-w-4xl mx-auto px-4 py-16">
-    <h3 class="text-3xl font-bold mb-10 text-center dark:text-white">Skills</h3>
-    
+   <section id="skills" class="max-w-4xl mx-auto px-4 py-16">
+    <h3 class="text-3xl font-bold mb-10 text-center dark:text-white flex items-center justify-center gap-3">
+      <svg class="w-8 h-8 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+      </svg>
+      Skills
+    </h3>
     <div class="space-y-6">
       <!-- HTML Skill -->
       <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow">
         <div class="flex justify-between items-center mb-2">
           <span class="font-semibold dark:text-white flex items-center gap-2">
-            <span class="text-orange-500">◉</span> HTML
+         <i class="fa-brands fa-html5 fa-xl" style="color: #ff8543;"></i>
+          HTML
           </span>
-          <span class="text-indigo-600 dark:text-indigo-400 font-semibold">90%</span>
+          <span class="text-indigo-600 dark:text-indigo-400 font-semibold"></span>
         </div>
         <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
           <div class="progress-bar-fill h-full bg-orange-500 rounded-full" style="width: 0%" data-width="90%"></div>
@@ -243,9 +285,10 @@
       <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow">
         <div class="flex justify-between items-center mb-2">
           <span class="font-semibold dark:text-white flex items-center gap-2">
-            <span class="text-cyan-500">◉</span> Tailwind CSS
+           <i class="fa-brands fa-css3-alt fa-xl" style="color: #2ed4f5;"></i>
+           Tailwind CSS
           </span>
-          <span class="text-indigo-600 dark:text-indigo-400 font-semibold">85%</span>
+          <span class="text-indigo-600 dark:text-indigo-400 font-semibold"></span>
         </div>
         <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
           <div class="progress-bar-fill h-full bg-cyan-500 rounded-full" style="width: 0%" data-width="85%"></div>
@@ -256,9 +299,9 @@
       <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow">
         <div class="flex justify-between items-center mb-2">
           <span class="font-semibold dark:text-white flex items-center gap-2">
-            <span class="text-yellow-500">◉</span> JavaScript
+           <i class="fa-brands fa-js fa-xl" style="color: #FFD43B;"></i>JavaScript
           </span>
-          <span class="text-indigo-600 dark:text-indigo-400 font-semibold">75%</span>
+          <span class="text-indigo-600 dark:text-indigo-400 font-semibold"></span>
         </div>
         <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
           <div class="progress-bar-fill h-full bg-yellow-500 rounded-full" style="width: 0%" data-width="75%"></div>
@@ -269,12 +312,41 @@
       <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow">
         <div class="flex justify-between items-center mb-2">
           <span class="font-semibold dark:text-white flex items-center gap-2">
-            <span class="text-gray-700 dark:text-gray-300">◉</span> Git & GitHub
+          <i class="fa-brands fa-github fa-xl"></i> 
+          Git & GitHub
           </span>
-          <span class="text-indigo-600 dark:text-indigo-400 font-semibold">80%</span>
+          <span class="text-indigo-600 dark:text-indigo-400 font-semibold"></span>
         </div>
         <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
           <div class="progress-bar-fill h-full bg-gray-700 dark:bg-gray-300 rounded-full" style="width: 0%" data-width="80%"></div>
+        </div>
+      </div>
+
+      <!-- MongoDB & Node.js Skill -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow">
+        <div class="flex justify-between items-center mb-2">
+          <span class="font-semibold dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-database fa-xl" style="color: #47A248;"></i>
+            Node.js & MongoDB
+          </span>
+          <span class="text-indigo-600 dark:text-indigo-400 font-semibold"></span>
+        </div>
+        <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+          <div class="progress-bar-fill h-full bg-green-600 rounded-full" style="width: 0%" data-width="65%"></div>
+        </div>
+      </div>
+
+      <!-- Next.js Skill -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow">
+        <div class="flex justify-between items-center mb-2">
+          <span class="font-semibold dark:text-white flex items-center gap-2">
+            <i class="fa-brands fa-react fa-xl" style="color: #61DAFB;"></i>
+            Next.js
+          </span>
+          <span class="text-indigo-600 dark:text-indigo-400 font-semibold"></span>
+        </div>
+        <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+          <div class="progress-bar-fill h-full bg-blue-500 rounded-full" style="width: 0%" data-width="70%"></div>
         </div>
       </div>
     </div>
@@ -334,21 +406,11 @@
         </a>
 
         <!-- CodePen -->
-        <a href="https://codepen.io/@fcc-f780e556-b8b8-4c5b-9ab4-d68c2e1cbbob" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 transition-colors">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2.4c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.914 2 12 6.486 2 12 2zm5.692 6.4H6.308l.9-2.4h9.384l.9 2.4zM8.4 12l1.8-4.8 1.8 4.8h-3.6zm6.6 2.4h2.4v4.8l-2.4-1.2-2.4 1.2V14.4h2.4z"/>
-          </svg>
+        <a href="https://codepen.io/pen" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 transition-colors">
+          <i class="fa-brands fa-codepen"></i>
         </a>
-
-        <!-- FreeCodeCamp -->
-        <a href="https://freecodecamp.org/anballem" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 transition-colors">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
-          </svg>
-        </a>
-      </div>
-
     </div>
+
   </section>
 
   <!-- ===== FOOTER ===== -->
