@@ -1,8 +1,4 @@
-# Full-Stack Developer Portfolio
-
-A responsive full-stack developer portfolio built with **HTML, Tailwind CSS, JavaScript, Next.js, and Node.js**.
-
-# 👩🏽‍💻 Jennifer Iyotoru – Developer Portfolio
+# 👩🏽‍💻 Annette Ballet – Developer Portfolio
 
 Welcome to my developer portfolio 👋  
 I am an aspiring **Full-Stack / Frontend Developer** with experience building responsive web applications and RESTful APIs using modern JavaScript technologies.
@@ -98,7 +94,7 @@ A single-page weather application that displays weather forecasts for a selected
 A front-end social media style application that displays user posts in a card-based layout.
 
 **Features**
-- Social post cards
+- Social post-cards
 - Responsive design
 - Clean UI layout
 - Component-based structure

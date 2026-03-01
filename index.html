@@ -10,6 +10,7 @@
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
+    let tailwind;
     tailwind.config = {
       darkMode: 'class'
     }
@@ -72,17 +73,17 @@
 
   <!-- ===== ABOUT SECTION ===== -->
   <section id="about" class="max-w-6xl mx-auto px-4 py-16">
-    
+
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
       <!-- Image Column -->
       <div class="flex justify-center">
-        <img 
+        <img
           src="images/AnneB.jpg"
-          alt="Annette Ballet" 
+          alt="Annette Ballet"
           class="w-full max-w-md rounded-2xl shadow-lg object-cover aspect-square hover:shadow-xl transition-shadow duration-300"
         />
       </div>
-      
+
       <!-- Bio Text Column -->
       <div>
         <h4 class="text-3xl font-bold mb-2 text-indigo-600 dark:text-indigo-400">About Me</h4>
@@ -93,7 +94,7 @@
         <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
           When I'm not coding, I enjoy experimenting in the kitchen and turning ideas into creative projects both on the web and off it.
         </p>
-        
+
         <!-- Quick Stats -->
         <div class="flex gap-6 mt-6">
           <div class="text-center">
@@ -113,7 +114,7 @@
   <section id="projects" class="py-16">
     <div class="max-w-6xl mx-auto px-4">
       <h3 class="text-3xl font-bold mb-10 text-center dark:text-white">My Projects</h3>
-      
+
       <!-- Filter Buttons -->
       <div class="flex justify-center gap-4 mb-10 flex-wrap">
         <button data-filter="all"
@@ -136,7 +137,7 @@
 
       <!-- Projects Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
+
         <!-- Project 1 -->
         <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="html">
           <div class="relative h-48 bg-gray-100 dark:bg-gray-800 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.1%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] dark:bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%239C92AC%27%20fill-opacity%3D%270.05%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')]">
@@ -203,7 +204,7 @@
           </div>
           <div class="p-5">
             <h4 class="text-xl font-bold mb-2 dark:text-white">Weather App</h4>
-            <p class="mb-4 text-gray-600 dark:text-gray-300">A Weather App using Next.JS.</p>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">A Weather App using Next.js.</p>
           </div>
         </div>
 
@@ -277,7 +278,7 @@
           <span class="text-indigo-600 dark:text-indigo-400 font-semibold"></span>
         </div>
         <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-          <div class="progress-bar-fill h-full bg-orange-500 rounded-full" style="width: 0%" data-width="90%"></div>
+          <div class="progress-bar-fill h-full bg-orange-500 rounded-full" style="width: 0" data-width="90%"></div>
         </div>
       </div>
 
@@ -291,7 +292,7 @@
           <span class="text-indigo-600 dark:text-indigo-400 font-semibold"></span>
         </div>
         <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-          <div class="progress-bar-fill h-full bg-cyan-500 rounded-full" style="width: 0%" data-width="85%"></div>
+          <div class="progress-bar-fill h-full bg-cyan-500 rounded-full" style="width: 0" data-width="85%"></div>
         </div>
       </div>
 
@@ -304,7 +305,7 @@
           <span class="text-indigo-600 dark:text-indigo-400 font-semibold"></span>
         </div>
         <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-          <div class="progress-bar-fill h-full bg-yellow-500 rounded-full" style="width: 0%" data-width="75%"></div>
+          <div class="progress-bar-fill h-full bg-yellow-500 rounded-full" style="width: 0" data-width="75%"></div>
         </div>
       </div>
 
@@ -318,7 +319,7 @@
           <span class="text-indigo-600 dark:text-indigo-400 font-semibold"></span>
         </div>
         <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-          <div class="progress-bar-fill h-full bg-gray-700 dark:bg-gray-300 rounded-full" style="width: 0%" data-width="80%"></div>
+          <div class="progress-bar-fill h-full bg-gray-700 dark:bg-gray-300 rounded-full" style="width: 0" data-width="80%"></div>
         </div>
       </div>
 
@@ -332,7 +333,7 @@
           <span class="text-indigo-600 dark:text-indigo-400 font-semibold"></span>
         </div>
         <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-          <div class="progress-bar-fill h-full bg-green-600 rounded-full" style="width: 0%" data-width="65%"></div>
+          <div class="progress-bar-fill h-full bg-green-600 rounded-full" style="width: 0" data-width="65%"></div>
         </div>
       </div>
 
@@ -346,7 +347,7 @@
           <span class="text-indigo-600 dark:text-indigo-400 font-semibold"></span>
         </div>
         <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-          <div class="progress-bar-fill h-full bg-blue-500 rounded-full" style="width: 0%" data-width="70%"></div>
+          <div class="progress-bar-fill h-full bg-blue-500 rounded-full" style="width: 0" data-width="70%"></div>
         </div>
       </div>
     </div>
@@ -355,7 +356,7 @@
   <!-- ===== CONTACT SECTION ===== -->
   <section id="contact" class="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 py-20">
     <div class="max-w-4xl mx-auto px-4">
-      
+
       <!-- Contact Message -->
       <div class="text-center mb-10">
         <h3 class="text-3xl font-bold mb-4 dark:text-white">Get In Touch <br>Let's Work Together!</h3>
@@ -366,7 +367,7 @@
 
       <!-- Social Media Links -->
       <div class="flex justify-center gap-6 mb-10 flex-wrap">
-        
+
         <!-- GitHub -->
         <a href="https://github.com/anballem" target="_blank" rel="noopener noreferrer"
            class="flex items-center gap-3 bg-white dark:bg-gray-800 px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
@@ -386,7 +387,7 @@
         </a>
 
         <!-- Email Button -->
-        <a href="mailto:anballem@example.com" 
+        <a href="mailto:anballem@example.com"
            class="flex items-center gap-3 bg-indigo-600 text-white px-8 py-3 rounded-full shadow-md hover:shadow-lg hover:bg-indigo-700 transition-all duration-300 hover:-translate-y-1 group">
           <svg class="w-6 h-6 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -397,6 +398,7 @@
       </div>
 
       <!-- Additional Social Links -->
+      <section>
       <div class="flex justify-center gap-8">
         <!-- Twitter/X -->
         <a href="https://twitter.com/anballem" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 transition-colors">
